@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16 15:42",
+ "updatedAt": "2026-10-16 16:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -8,11 +8,11 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-20",
    "Note": "ออก memo กล้อง",
    "CreatedAt": "2026-10-16 13:29",
-   "UpdatedAt": "2026-10-16 13:41",
+   "UpdatedAt": "2026-10-16 15:53",
    "CompletedAt": ""
   },
   {
@@ -22,11 +22,11 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-20",
    "Note": "ups capex",
    "CreatedAt": "2026-10-16 13:30",
-   "UpdatedAt": "2026-10-16 13:41",
+   "UpdatedAt": "2026-10-16 15:53",
    "CompletedAt": ""
   },
   {
@@ -64,12 +64,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-16",
    "Note": "Capex ใส่ update bitdefender Capex ram laptop Capexอะไหร่จอ",
    "CreatedAt": "2026-10-16 13:33",
-   "UpdatedAt": "2026-10-16 15:13",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-16 15:52",
+   "CompletedAt": "2026-10-16 15:52"
   },
   {
    "ID": "TMVALJBY9QXY",
