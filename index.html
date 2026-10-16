@@ -193,6 +193,7 @@ dialog::backdrop{background:rgba(0,0,0,.4)}
   .dlg-b{grid-template-columns:1fr}
 }
 body.ro .edit-only{display:none!important}
+body.pub .admin-only{display:none!important}
 @media print{header.top,.tabs,.toolbar,.no-print{display:none!important}body{background:#fff}}
 </style>
 </head>
@@ -203,7 +204,7 @@ body.ro .edit-only{display:none!important}
     <span id="conn" class="conn">กำลังโหลด…</span>
     <button class="btn" id="btnConnect" hidden>เข้าสู่ระบบ Microsoft</button>
     <button class="btn" id="btnRefresh">รีเฟรช</button>
-    <button class="btn" id="btnSettings">ตั้งค่า</button>
+    <button class="btn admin-only" id="btnSettings">ตั้งค่า</button>
   </header>
 
   <nav class="tabs">
@@ -236,7 +237,7 @@ body.ro .edit-only{display:none!important}
       <select id="repCat"></select>
       <select id="repStatus"></select>
       <span class="grow"></span>
-      <button class="btn" id="btnCsv">Export CSV</button>
+      <button class="btn edit-only" id="btnCsv">Export CSV</button>
       <button class="btn" id="btnPrint">พิมพ์</button>
     </div>
     <div class="chips" id="repChips"></div>
@@ -527,9 +528,32 @@ async function boot(){
   }catch(e){
     console.error(e);
     tasks = []; render();
-    if(e.needLogin){ setConn("Excel: ยังไม่ได้เข้าสู่ระบบ","warn"); $("#btnConnect").hidden=false; }
+    if(e.needLogin && await loadPublic()) return;
+    if(e.needLogin){
+      setConn("ยังไม่ได้เข้าสู่ระบบ","warn"); $("#btnConnect").hidden=false;
+      document.body.classList.add("ro");
+      $("#dayChips").innerHTML=""; $("#carryTitle").hidden=true;
+      $("#dayList").innerHTML = `<div class="empty">กด <b>เข้าสู่ระบบ Microsoft</b> ด้วยบัญชี @thegemspattaya.com เพื่อดูงาน</div>`;
+    }
     else { setConn("เชื่อมต่อไม่สำเร็จ","warn"); $("#btnConnect").hidden = cfg.mode!=="excel"; toast(e.message); }
   }
+}
+// Public view: anyone can see the latest snapshot (data.json, refreshed from Excel) without signing in.
+// Only IT signs in, by opening the page with ?admin
+let isPublic = false;
+async function loadPublic(){
+  if(/[?&]admin\b/.test(location.search)) return false;
+  try{
+    const r = await fetch("data.json?t="+Date.now(), {cache:"no-store"});
+    if(!r.ok) return false;
+    const j = await r.json();
+    tasks = (j.tasks||[]).filter(t=>t && t.ID); dirty = {};
+    isPublic = true; readOnly = true;
+    document.body.classList.add("ro","pub");
+    $("#btnConnect").hidden = true;
+    setConn(`ดูอย่างเดียว · ข้อมูล ณ ${j.updatedAt||"-"}`, "ok");
+    render(); return true;
+  }catch(_){ return false; }
 }
 async function reload(){ tasks = await store.load(); dirty = {}; render(); }
 
@@ -808,7 +832,7 @@ $("#btnConnect").onclick = async ()=>{
 };
 $("#btnRefresh").onclick = async ()=>{
   if(Object.keys(dirty).length && !confirm("มีสถานะที่ยังไม่บันทึก ต้องการรีเฟรชและทิ้งการเปลี่ยนแปลง?")) return;
-  try{ await busy("กำลังโหลดข้อมูล…", ()=>reload()); toast("อัปเดตข้อมูลล่าสุดแล้ว"); }catch(e){ toast(e.message); }
+  try{ await busy("กำลังโหลดข้อมูล…", ()=> isPublic ? loadPublic() : reload()); toast("อัปเดตข้อมูลล่าสุดแล้ว"); }catch(e){ toast(e.message); }
 };
 
 /* navigation */
