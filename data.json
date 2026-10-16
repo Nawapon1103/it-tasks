@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16 16:08",
+ "updatedAt": "2026-10-16 17:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -232,12 +232,12 @@
    "Category": "COMPUTER",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-16",
    "Note": "",
    "CreatedAt": "2026-10-16 14:10",
-   "UpdatedAt": "2026-10-16 15:13",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-16 16:57",
+   "CompletedAt": "2026-10-16 16:57"
   },
   {
    "ID": "TMVAMPGAO9NQ",
@@ -246,12 +246,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-16",
    "Note": "",
    "CreatedAt": "2026-10-16 14:11",
-   "UpdatedAt": "2026-10-16 15:13",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-16 16:57",
+   "CompletedAt": "2026-10-16 16:57"
   }
  ]
 }
