@@ -406,20 +406,26 @@ const ExcelStore = {
       cache:{ cacheLocation:"localStorage" }
     });
     if(this.msal.initialize) await this.msal.initialize();
-    if(this.msal.handleRedirectPromise) await this.msal.handleRedirectPromise().catch(()=>{});
-    const acc = this.msal.getAllAccounts(); if(acc.length) this.account = acc[0];
+    // Sign-in uses full-page redirects (works on phones, no popups). Pick up the result on return.
+    const res = await this.msal.handleRedirectPromise().catch(e=>{ toast("เข้าสู่ระบบไม่สำเร็จ: "+e.message); return null; });
+    if(res && res.account) this.account = res.account;
+    if(!this.account){ const acc = this.msal.getAllAccounts(); if(acc.length) this.account = acc[0]; }
+    if(this.account) this.msal.setActiveAccount(this.account);
   },
   async signIn(){
     await this.setupMsal();
-    if(!this.account){ const r = await this.msal.loginPopup({scopes:SCOPES, prompt:"select_account"}); this.account = r.account; }
+    if(!this.account){ await this.msal.loginRedirect({scopes:SCOPES, prompt:"select_account"}); }
   },
   async signOut(){
-    if(this.msal && this.account){ await this.msal.logoutPopup({account:this.account}).catch(()=>{}); }
-    this.account=null; this.itemId=null;
+    const acc = this.account; this.account=null; this.itemId=null;
+    if(this.msal && acc){ await this.msal.logoutRedirect({account:acc, postLogoutRedirectUri:location.origin+location.pathname}).catch(()=>{}); }
   },
   async token(){
     try{ return (await this.msal.acquireTokenSilent({scopes:SCOPES, account:this.account})).accessToken; }
-    catch(e){ return (await this.msal.acquireTokenPopup({scopes:SCOPES, account:this.account})).accessToken; }
+    catch(e){
+      if(e instanceof msal.InteractionRequiredAuthError){ await this.msal.acquireTokenRedirect({scopes:SCOPES, account:this.account}); }
+      throw e;
+    }
   },
   async api(method, url, body, binary){
     const h = {Authorization:"Bearer "+await this.token()}; let b;
@@ -813,6 +819,8 @@ $("#btnCsv").onclick = ()=>{
 window.addEventListener("beforeunload", e=>{ if(Object.keys(dirty).length){ e.preventDefault(); e.returnValue=""; } });
 
 /* start */
+// If an old sign-in popup lands here, don't start the app inside it — just close.
+if(window.opener && /^msal\./.test(window.name||"")){ document.body.innerHTML='<p style="padding:24px">กำลังเข้าสู่ระบบ…</p>'; throw new Error("msal popup"); }
 $("#day").value = ymd(new Date());
 $("#month").value = ymd(new Date()).slice(0,7);
 boot();
