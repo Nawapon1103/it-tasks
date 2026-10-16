@@ -192,6 +192,7 @@ dialog::backdrop{background:rgba(0,0,0,.4)}
   .actions{justify-content:flex-end}
   .dlg-b{grid-template-columns:1fr}
 }
+body.ro .edit-only{display:none!important}
 @media print{header.top,.tabs,.toolbar,.no-print{display:none!important}body{background:#fff}}
 </style>
 </head>
@@ -219,8 +220,8 @@ dialog::backdrop{background:rgba(0,0,0,.4)}
       <button class="btn sm ghost" id="today">วันนี้</button>
       <select id="dayCat"></select>
       <input type="search" id="q" placeholder="ค้นหางาน…" class="grow">
-      <button class="btn" id="btnSaveAll" disabled>บันทึกทั้งหมด</button>
-      <button class="btn primary" id="btnAdd">+ เพิ่มงาน</button>
+      <button class="btn edit-only" id="btnSaveAll" disabled>บันทึกทั้งหมด</button>
+      <button class="btn primary edit-only" id="btnAdd">+ เพิ่มงาน</button>
     </div>
     <div class="chips" id="dayChips"></div>
     <div class="list" id="dayList"></div>
@@ -290,7 +291,7 @@ dialog::backdrop{background:rgba(0,0,0,.4)}
       <div class="hint" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
         <b style="width:100%">ย้ายข้อมูล</b>
         <button type="button" class="btn sm" id="btnExportJson">ส่งออกงานทั้งหมด (.json)</button>
-        <button type="button" class="btn sm" id="btnImportJson">นำเข้างานจากไฟล์ .json</button>
+        <button type="button" class="btn sm edit-only" id="btnImportJson">นำเข้างานจากไฟล์ .json</button>
         <input type="file" id="importFile" accept=".json,application/json" hidden>
         <span style="width:100%">ส่งออกจากโหมด Demo แล้วนำเข้าในโหมด Excel เพื่อย้ายงานเข้า OneDrive (งานตัวอย่างจะถูกข้าม)</span>
       </div>
@@ -311,7 +312,7 @@ dialog::backdrop{background:rgba(0,0,0,.4)}
 /* ===================== CONFIG ===================== */
 const COLS = ["ID","Date","Title","Category","Owner","Priority","Status","Deadline","Note","CreatedAt","UpdatedAt","CompletedAt"];
 const SHEET = "Tasks", TABLE = "TaskTable";
-const SCOPES = ["User.Read","Files.ReadWrite"];
+const SCOPES = ["User.Read","Files.ReadWrite.All"]; // .All = can open the shared file in it@'s OneDrive
 const STATUSES = [
   {k:"Pending",    th:"รอดำเนินการ", c:"pending"},
   {k:"On Process", th:"กำลังทำ",     c:"process"},
@@ -320,10 +321,15 @@ const STATUSES = [
 ];
 const ST = Object.fromEntries(STATUSES.map(s=>[s.k,s]));
 const OWNERS = ["IT","อื่นๆ"];
+// Only this account can add/edit. Everyone else who signs in sees a read-only view.
+const OWNER = "it@thegemspattaya.com";
+let readOnly = false;
 const OPEN = s => s==="Pending" || s==="On Process";
 
 function loadCfg(){
   const def = {mode:"excel",clientId:"2fb022e5-5631-4bc0-8714-847d0f7d031b",tenant:"1b0d1a85-02d5-4ff3-9696-ba808ea90485",path:"GMPV.IT.JOBTASK.xlsx",
+               // shared team file: GMPV.IT.JOBTASK.xlsx in it@thegemspattaya.com's OneDrive (everyone uses this one)
+               driveId:"b!lwpvCB2t-UK2xAipBsOtAyB3rwDTfatOqrnRYBFZh-Hm1bVZMOteTb0nIuVXzF6J",itemId:"01LMYDHVY2LAIAGQFIFRGKPN3BHU5IWEON",
                categories:["CCTV","TV","WIFI","COMPUTER","NETWORK","อื่นๆ"]};
   try{
     const c = Object.assign({}, def, JSON.parse(localStorage.getItem("td_cfg")||"{}"));
@@ -395,7 +401,7 @@ const LocalStore = {
 /* ===================== STORE: EXCEL ON ONEDRIVE (Microsoft Graph) ===================== */
 const G = "https://graph.microsoft.com/v1.0";
 const ExcelStore = {
-  msal:null, account:null, itemId:null, webUrl:"",
+  msal:null, account:null, itemId:null, driveId:"", webUrl:"",
   label(){ return this.account ? `Excel: ${cfg.path.split("/").pop()} (${this.account.username})` : "Excel: ยังไม่ได้เข้าสู่ระบบ"; },
   async setupMsal(){
     if(this.msal) return;
@@ -434,18 +440,27 @@ const ExcelStore = {
     const r = await fetch(url.startsWith("http")?url:G+url, {method, headers:h, body:b});
     if(r.status===204) return null;
     const j = await r.json().catch(()=>null);
-    if(!r.ok){ const e=new Error((j&&j.error&&j.error.message)||r.statusText); e.status=r.status; throw e; }
+    if(!r.ok){
+      let msg=(j&&j.error&&j.error.message)||r.statusText;
+      if(r.status===403) msg = method==="GET" ? "ไม่มีสิทธิ์เปิดไฟล์ Excel นี้ — ขอให้ it@ แชร์ไฟล์ GMPV.IT.JOBTASK.xlsx ให้คุณ" : "คุณมีสิทธิ์ดูอย่างเดียว — ขอให้ it@ แชร์ไฟล์แบบ Can edit ถ้าต้องการแก้ไข";
+      const e=new Error(msg); e.status=r.status; throw e;
+    }
     return j;
   },
   pathUrl(){ return "/me/drive/root:/"+cfg.path.split("/").filter(Boolean).map(encodeURIComponent).join("/")+":"; },
-  wb(){ return `/me/drive/items/${this.itemId}/workbook`; },
+  wb(){ return this.driveId ? `/drives/${this.driveId}/items/${this.itemId}/workbook` : `/me/drive/items/${this.itemId}/workbook`; },
   async retry(fn, n=5){ for(let i=0;;i++){ try{ return await fn(); }catch(e){ if(i>=n || (e.status && e.status<500 && e.status!==404 && e.status!==409)) throw e; await new Promise(r=>setTimeout(r,1500)); } } },
   async init(){
     await this.setupMsal();
     if(!this.account) throw Object.assign(new Error("กรุณาเข้าสู่ระบบ Microsoft"),{needLogin:true});
     // 1) find or create the workbook
     let created = false;
-    try{ const it = await this.api("GET", this.pathUrl()); this.itemId = it.id; this.webUrl = it.webUrl; }
+    if(cfg.driveId && cfg.itemId){
+      // Shared file: open it directly by id, so every signed-in colleague uses the same workbook
+      const it = await this.api("GET", `/drives/${cfg.driveId}/items/${cfg.itemId}`);
+      this.driveId = cfg.driveId; this.itemId = it.id; this.webUrl = it.webUrl;
+    }
+    else try{ this.driveId = ""; const it = await this.api("GET", this.pathUrl()); this.itemId = it.id; this.webUrl = it.webUrl; }
     catch(e){
       if(e.status!==404) throw e;
       const wb = XLSX.utils.book_new();
@@ -505,7 +520,10 @@ async function boot(){
     setConn("กำลังเชื่อมต่อ…");
     await store.init();
     await reload();
-    setConn(store.label(), cfg.mode==="excel"?"ok":"warn");
+    readOnly = cfg.mode==="excel" && !!ExcelStore.account && (ExcelStore.account.username||"").toLowerCase()!==OWNER;
+    document.body.classList.toggle("ro", readOnly);
+    setConn(readOnly ? `ผู้ชม (ดูอย่างเดียว): ${ExcelStore.account.username}` : store.label(), cfg.mode==="excel"?"ok":"warn");
+    if(readOnly) render();
   }catch(e){
     console.error(e);
     tasks = []; render();
@@ -552,12 +570,12 @@ function taskCard(t, showDate){
       </div>
       ${t.Note?`<div class="note">${esc(t.Note)}</div>`:""}
     </div>
-    <div class="task-side">
+    <div class="task-side">${readOnly ? `<span class="badge ${(ST[st]||ST.Pending).c}">${(ST[st]||ST.Pending).th}</span>` : `
       <div class="seg">${STATUSES.map(s=>`<button class="st ${s.c} ${st===s.k?"on":""}" data-act="status" data-st="${s.k}">${s.th}</button>`).join("")}</div>
       <div class="actions">
         <button class="btn sm ${isDirty?"primary":""}" data-act="save" ${isDirty?"":"disabled"}>${isDirty?"บันทึก":"บันทึกแล้ว"}</button>
         <button class="btn sm ghost" data-act="edit">แก้ไข</button>
-      </div>
+      </div>`}
     </div>
   </div>`;
 }
@@ -678,6 +696,7 @@ async function saveAll(){
 }
 
 async function onListClick(e){
+  if(readOnly) return;
   const btn = e.target.closest("button[data-act]"); if(!btn) return;
   const id = btn.closest(".task").dataset.id, t = tasks.find(x=>x.ID===id);
   const act = btn.dataset.act;
@@ -746,7 +765,9 @@ $("#setForm").addEventListener("submit", e=>{
   e.preventDefault(); const f=e.target;
   const changedConn = f.clientId.value.trim()!==cfg.clientId || (f.tenant.value.trim()||"common")!==cfg.tenant;
   cfg.mode=f.mode.value; cfg.clientId=f.clientId.value.trim(); cfg.tenant=f.tenant.value.trim()||"common";
-  cfg.path=f.path.value.trim()||"GMPV.IT.JOBTASK.xlsx";
+  const newPath=f.path.value.trim()||"GMPV.IT.JOBTASK.xlsx";
+  if(newPath!==cfg.path){ cfg.driveId=""; cfg.itemId=""; } // custom file = signer's own OneDrive
+  cfg.path=newPath;
   cfg.categories=f.categories.value.split(",").map(s=>s.trim()).filter(Boolean);
   saveCfg(); if(changedConn){ ExcelStore.msal=null; ExcelStore.account=null; }
   ExcelStore.itemId=null;
@@ -802,7 +823,7 @@ $("#prevDay").onclick = ()=>{ $("#day").value=addDays($("#day").value,-1); rende
 $("#nextDay").onclick = ()=>{ $("#day").value=addDays($("#day").value,1); renderDaily(); };
 $("#today").onclick = ()=>{ $("#day").value=ymd(new Date()); renderDaily(); };
 $("#dayCat").onchange = renderDaily; $("#q").oninput = renderDaily;
-$("#btnAdd").onclick = ()=>openTask(null);
+$("#btnAdd").onclick = ()=>{ if(!readOnly) openTask(null); };
 $("#btnSaveAll").onclick = saveAll;
 $("#dayList").onclick = onListClick; $("#carryList").onclick = onListClick;
 ["#month","#repCat","#repStatus"].forEach(s=>$(s).onchange=renderReport);
