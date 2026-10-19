@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19 12:10",
+ "updatedAt": "2026-10-19 22:11",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -302,11 +302,11 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-19 11:30",
-   "UpdatedAt": "2026-10-19 11:30",
+   "UpdatedAt": "2026-10-19 14:17",
    "CompletedAt": ""
   },
   {
@@ -330,12 +330,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-19 11:39",
-   "UpdatedAt": "2026-10-19 11:39",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-19 14:11",
+   "CompletedAt": "2026-10-19 14:11"
   },
   {
    "ID": "TMVERQK79L9T",
@@ -344,11 +344,11 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-19 11:42",
-   "UpdatedAt": "2026-10-19 11:42",
+   "UpdatedAt": "2026-10-19 14:17",
    "CompletedAt": ""
   },
   {
@@ -358,12 +358,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-19 11:42",
-   "UpdatedAt": "2026-10-19 11:42",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-19 14:18",
+   "CompletedAt": "2026-10-19 14:18"
   }
  ]
 }
