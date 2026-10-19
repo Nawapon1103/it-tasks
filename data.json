@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19 09:08",
+ "updatedAt": "2026-10-19 10:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -22,12 +22,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "ups capex",
    "CreatedAt": "2026-10-16 13:30",
-   "UpdatedAt": "2026-10-16 15:53",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-19 09:58",
+   "CompletedAt": "2026-10-19 09:58"
   },
   {
    "ID": "TMVALA4MNKSA",
@@ -92,11 +92,11 @@
    "Category": "WIFI",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-21",
    "Note": "",
    "CreatedAt": "2026-10-16 13:42",
-   "UpdatedAt": "2026-10-16 13:42",
+   "UpdatedAt": "2026-10-19 09:42",
    "CompletedAt": ""
   },
   {
@@ -252,6 +252,20 @@
    "CreatedAt": "2026-10-16 14:11",
    "UpdatedAt": "2026-10-16 16:57",
    "CompletedAt": "2026-10-16 16:57"
+  },
+  {
+   "ID": "TMVEMOKTWX8I",
+   "Date": "2026-10-19",
+   "Title": "เพิ่ม HDD ให้ มิน Marcom",
+   "Category": "COMPUTER",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-10-20",
+   "Note": "",
+   "CreatedAt": "2026-10-19 09:21",
+   "UpdatedAt": "2026-10-19 09:21",
+   "CompletedAt": ""
   }
  ]
 }
