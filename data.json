@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19 11:08",
+ "updatedAt": "2026-10-19 12:10",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -8,12 +8,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "ออก memo กล้อง",
    "CreatedAt": "2026-10-16 13:29",
-   "UpdatedAt": "2026-10-16 15:53",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-19 11:29",
+   "CompletedAt": "2026-10-19 11:29"
   },
   {
    "ID": "TMVAL91YY6U6",
@@ -148,12 +148,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-16",
    "Note": "",
    "CreatedAt": "2026-10-16 13:44",
-   "UpdatedAt": "2026-10-16 15:13",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-19 11:29",
+   "CompletedAt": "2026-10-19 11:29"
   },
   {
    "ID": "TMVALR1JFH70",
@@ -204,12 +204,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-19",
    "Note": "",
    "CreatedAt": "2026-10-16 13:45",
-   "UpdatedAt": "2026-10-16 15:13",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-19 11:29",
+   "CompletedAt": "2026-10-19 11:29"
   },
   {
    "ID": "TMVALT1D60JD",
@@ -274,11 +274,95 @@
    "Category": "NETWORK",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "",
    "Note": "symphony",
    "CreatedAt": "2026-10-19 10:24",
-   "UpdatedAt": "2026-10-19 10:29",
+   "UpdatedAt": "2026-10-19 11:29",
+   "CompletedAt": "2026-10-19 11:29"
+  },
+  {
+   "ID": "TMVER8BKYLDZ",
+   "Date": "2026-10-19",
+   "Title": "สติกเกอร์สกูตเตอร์",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-10-30",
+   "Note": "",
+   "CreatedAt": "2026-10-19 11:28",
+   "UpdatedAt": "2026-10-19 11:28",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVERAGTKW4U",
+   "Date": "2026-10-19",
+   "Title": "ดู CCTV ให้แคร์",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-10-20",
+   "Note": "",
+   "CreatedAt": "2026-10-19 11:30",
+   "UpdatedAt": "2026-10-19 11:30",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVERC48PLZK",
+   "Date": "2026-10-19",
+   "Title": "คิดวิธีคำนวนคะแนน และสร้างQR code mentor",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-10-26",
+   "Note": "",
+   "CreatedAt": "2026-10-19 11:31",
+   "UpdatedAt": "2026-10-19 11:31",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVERLW4JRBE",
+   "Date": "2026-10-19",
+   "Title": "ปรับกล้องวงจรปิด lobby",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-10-20",
+   "Note": "",
+   "CreatedAt": "2026-10-19 11:39",
+   "UpdatedAt": "2026-10-19 11:39",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVERQK79L9T",
+   "Date": "2026-10-19",
+   "Title": "แก้กล้องวงจรปิด phase2 tank",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-10-20",
+   "Note": "",
+   "CreatedAt": "2026-10-19 11:42",
+   "UpdatedAt": "2026-10-19 11:42",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVERQL6RLRG",
+   "Date": "2026-10-19",
+   "Title": "แก้กล้องวงจรปิด phase2 tank",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-10-20",
+   "Note": "",
+   "CreatedAt": "2026-10-19 11:42",
+   "UpdatedAt": "2026-10-19 11:42",
    "CompletedAt": ""
   }
  ]
