@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20 08:08",
+ "updatedAt": "2026-10-20 11:09",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -78,11 +78,11 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-16",
    "Note": "",
    "CreatedAt": "2026-10-16 13:38",
-   "UpdatedAt": "2026-10-16 13:41",
+   "UpdatedAt": "2026-10-20 08:28",
    "CompletedAt": ""
   },
   {
@@ -131,14 +131,14 @@
    "ID": "TMVALQBJFUIU",
    "Date": "2026-10-16",
    "Title": "ค้างconfig wifi ห้องmedi",
-   "Category": "CCTV",
+   "Category": "WIFI",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-21",
    "Note": "",
    "CreatedAt": "2026-10-16 13:43",
-   "UpdatedAt": "2026-10-16 13:43",
+   "UpdatedAt": "2026-10-20 08:30",
    "CompletedAt": ""
   },
   {
@@ -260,12 +260,12 @@
    "Category": "COMPUTER",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-19 09:21",
-   "UpdatedAt": "2026-10-19 09:21",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-20 10:22",
+   "CompletedAt": "2026-10-20 10:22"
   },
   {
    "ID": "TMVEOXHI65IN",
@@ -282,45 +282,31 @@
    "CompletedAt": "2026-10-19 11:29"
   },
   {
-   "ID": "TMVER8BKYLDZ",
-   "Date": "2026-10-19",
-   "Title": "สติกเกอร์สกูตเตอร์",
-   "Category": "อื่นๆ",
-   "Owner": "IT",
-   "Priority": "Normal",
-   "Status": "Pending",
-   "Deadline": "2026-10-30",
-   "Note": "",
-   "CreatedAt": "2026-10-19 11:28",
-   "UpdatedAt": "2026-10-19 11:28",
-   "CompletedAt": ""
-  },
-  {
    "ID": "TMVERAGTKW4U",
    "Date": "2026-10-19",
    "Title": "ดู CCTV ให้แคร์",
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-19 11:30",
-   "UpdatedAt": "2026-10-19 14:17",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-20 08:28",
+   "CompletedAt": "2026-10-20 08:28"
   },
   {
    "ID": "TMVERC48PLZK",
    "Date": "2026-10-19",
    "Title": "คิดวิธีคำนวนคะแนน และสร้างQR code mentor",
-   "Category": "CCTV",
+   "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-26",
    "Note": "",
    "CreatedAt": "2026-10-19 11:31",
-   "UpdatedAt": "2026-10-19 11:31",
+   "UpdatedAt": "2026-10-20 08:30",
    "CompletedAt": ""
   },
   {
@@ -344,12 +330,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-19 11:42",
-   "UpdatedAt": "2026-10-19 14:17",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-20 08:27",
+   "CompletedAt": "2026-10-20 08:27"
   },
   {
    "ID": "TMVERQL6RLRG",
@@ -364,6 +350,90 @@
    "CreatedAt": "2026-10-19 11:42",
    "UpdatedAt": "2026-10-19 14:18",
    "CompletedAt": "2026-10-19 14:18"
+  },
+  {
+   "ID": "TMVG06Q9UZXQ",
+   "Date": "2026-10-20",
+   "Title": "ป้ายห้าม scooter ขึ้น",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-10-21",
+   "Note": "",
+   "CreatedAt": "2026-10-20 08:27",
+   "UpdatedAt": "2026-10-20 08:31",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVG073ABVKP",
+   "Date": "2026-10-20",
+   "Title": "ดูกล้องเคสยิว ของเมย์",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-21",
+   "Note": "",
+   "CreatedAt": "2026-10-20 08:27",
+   "UpdatedAt": "2026-10-20 08:27",
+   "CompletedAt": "2026-10-20 08:27"
+  },
+  {
+   "ID": "TMVG0OTU45UM",
+   "Date": "2026-10-20",
+   "Title": "outlook .ost เสียพี่มิ้ม",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-21",
+   "Note": "",
+   "CreatedAt": "2026-10-20 08:41",
+   "UpdatedAt": "2026-10-20 08:54",
+   "CompletedAt": "2026-10-20 08:54"
+  },
+  {
+   "ID": "TMVG0RUMV1UD",
+   "Date": "2026-10-20",
+   "Title": "ยกเลิก Forward Email HRM",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-18",
+   "Note": "",
+   "CreatedAt": "2026-10-20 08:43",
+   "UpdatedAt": "2026-10-20 08:43",
+   "CompletedAt": "2026-10-20 08:43"
+  },
+  {
+   "ID": "TMVG22NLKQKF",
+   "Date": "2026-10-20",
+   "Title": "ส่งEmail อบรม IT Com7",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-10-20",
+   "Note": "",
+   "CreatedAt": "2026-10-20 09:20",
+   "UpdatedAt": "2026-10-20 09:20",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVG49SM0RST",
+   "Date": "2026-10-20",
+   "Title": "Fw Email HR to HRM",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-21",
+   "Note": "",
+   "CreatedAt": "2026-10-20 10:21",
+   "UpdatedAt": "2026-10-20 10:21",
+   "CompletedAt": "2026-10-20 10:21"
   }
  ]
 }
