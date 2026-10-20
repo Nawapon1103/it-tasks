@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20 07:08",
+ "updatedAt": "2026-10-20 08:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -190,11 +190,11 @@
    "Category": "Follow-up",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "On Process",
    "Deadline": "2026-10-30",
    "Note": "",
    "CreatedAt": "2026-10-16 13:44",
-   "UpdatedAt": "2026-10-16 13:44",
+   "UpdatedAt": "2026-10-20 08:01",
    "CompletedAt": ""
   },
   {
