@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26 14:15",
+ "updatedAt": "2026-10-26 15:14",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -78,12 +78,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-16",
    "Note": "",
    "CreatedAt": "2026-10-16 13:38",
-   "UpdatedAt": "2026-10-20 08:28",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-26 14:24",
+   "CompletedAt": "2026-10-26 14:24"
   },
   {
    "ID": "TMVALOP44H88",
@@ -134,12 +134,12 @@
    "Category": "WIFI",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-21",
    "Note": "",
    "CreatedAt": "2026-10-16 13:43",
-   "UpdatedAt": "2026-10-20 08:30",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-26 14:24",
+   "CompletedAt": "2026-10-26 14:24"
   },
   {
    "ID": "TMVALQP187FI",
@@ -190,12 +190,12 @@
    "Category": "Follow-up",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-30",
    "Note": "",
    "CreatedAt": "2026-10-16 13:44",
-   "UpdatedAt": "2026-10-20 08:01",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-26 14:24",
+   "CompletedAt": "2026-10-26 14:24"
   },
   {
    "ID": "TMVALSKI9TCX",
@@ -414,12 +414,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "",
    "CreatedAt": "2026-10-20 09:20",
-   "UpdatedAt": "2026-10-20 09:20",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-26 14:28",
+   "CompletedAt": "2026-10-26 14:28"
   },
   {
    "ID": "TMVG49SM0RST",
@@ -476,6 +476,20 @@
    "CreatedAt": "2026-10-26 08:24",
    "UpdatedAt": "2026-10-26 08:24",
    "CompletedAt": ""
+  },
+  {
+   "ID": "TMVOXI6U175J",
+   "Date": "2026-10-26",
+   "Title": "ScoreBoard Mentor",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-26",
+   "Note": "",
+   "CreatedAt": "2026-10-26 14:22",
+   "UpdatedAt": "2026-10-26 14:22",
+   "CompletedAt": "2026-10-26 14:22"
   }
  ]
 }
