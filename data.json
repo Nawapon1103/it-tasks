@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26 18:11",
+ "updatedAt": "2026-10-26 19:15",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -470,12 +470,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-27",
    "Note": "",
    "CreatedAt": "2026-10-26 08:24",
-   "UpdatedAt": "2026-10-26 08:24",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-26 18:16",
+   "CompletedAt": "2026-10-26 18:16"
   },
   {
    "ID": "TMVOXI6U175J",
@@ -490,6 +490,34 @@
    "CreatedAt": "2026-10-26 14:22",
    "UpdatedAt": "2026-10-26 14:22",
    "CompletedAt": "2026-10-26 14:22"
+  },
+  {
+   "ID": "TMVP5UTZJCE9",
+   "Date": "2026-10-26",
+   "Title": "setup ห้องประชุม medi amari",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-26",
+   "Note": "",
+   "CreatedAt": "2026-10-26 18:15",
+   "UpdatedAt": "2026-10-26 18:15",
+   "CompletedAt": "2026-10-26 18:15"
+  },
+  {
+   "ID": "TMVP5V87K33Z",
+   "Date": "2026-10-26",
+   "Title": "ทำป้าย staff only medi",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-27",
+   "Note": "",
+   "CreatedAt": "2026-10-26 18:16",
+   "UpdatedAt": "2026-10-26 18:16",
+   "CompletedAt": "2026-10-26 18:16"
   }
  ]
 }
