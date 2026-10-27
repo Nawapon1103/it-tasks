@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27 08:08",
+ "updatedAt": "2026-10-27 09:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -218,12 +218,12 @@
    "Category": "Follow-up",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-10-20",
    "Note": "ขอใบเสนอราคา",
    "CreatedAt": "2026-10-16 13:45",
-   "UpdatedAt": "2026-10-16 13:45",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-10-27 09:02",
+   "CompletedAt": "2026-10-27 09:02"
   },
   {
    "ID": "TMVAMP5CILBE",
@@ -518,6 +518,34 @@
    "CreatedAt": "2026-10-26 18:16",
    "UpdatedAt": "2026-10-26 18:16",
    "CompletedAt": "2026-10-26 18:16"
+  },
+  {
+   "ID": "TMVQ1JAFKK41",
+   "Date": "2026-10-27",
+   "Title": "ทำรหัส wifi AMari",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-10-28",
+   "Note": "",
+   "CreatedAt": "2026-10-27 09:02",
+   "UpdatedAt": "2026-10-27 09:02",
+   "CompletedAt": "2026-10-27 09:02"
+  },
+  {
+   "ID": "TMVQ1JOKQG8S",
+   "Date": "2026-10-27",
+   "Title": "Update firmware Omada",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-10-28",
+   "Note": "",
+   "CreatedAt": "2026-10-27 09:03",
+   "UpdatedAt": "2026-10-27 09:03",
+   "CompletedAt": ""
   }
  ]
 }
