@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02 09:08",
+ "updatedAt": "2026-11-02 10:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -699,6 +699,62 @@
    "Note": "",
    "CreatedAt": "2026-10-28 17:04",
    "UpdatedAt": "2026-10-28 17:04",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVYMGSP9XVI",
+   "Date": "2026-11-02",
+   "Title": "upload promotion ขึ้นทุกช่องทาง",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-02",
+   "Note": "",
+   "CreatedAt": "2026-11-02 09:10",
+   "UpdatedAt": "2026-11-02 09:10",
+   "CompletedAt": "2026-11-02 09:10"
+  },
+  {
+   "ID": "TMVYMH5S5CKA",
+   "Date": "2026-11-02",
+   "Title": "แก้ cctv looby phase2",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-03",
+   "Note": "",
+   "CreatedAt": "2026-11-02 09:11",
+   "UpdatedAt": "2026-11-02 09:11",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVYN1IPMUVV",
+   "Date": "2026-11-02",
+   "Title": "เคลียประชุม explorer",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-03",
+   "Note": "",
+   "CreatedAt": "2026-11-02 09:26",
+   "UpdatedAt": "2026-11-02 09:26",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMVYN8CL3B7N",
+   "Date": "2026-11-02",
+   "Title": "ติดทีวี signage explorer",
+   "Category": "TV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-03",
+   "Note": "",
+   "CreatedAt": "2026-11-02 09:32",
+   "UpdatedAt": "2026-11-02 09:32",
    "CompletedAt": ""
   }
  ]
