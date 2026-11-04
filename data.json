@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04 10:08",
+ "updatedAt": "2026-11-04 11:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -120,12 +120,12 @@
    "Category": "Follow-up",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-10-28",
    "Note": "",
    "CreatedAt": "2026-10-16 13:43",
-   "UpdatedAt": "2026-10-16 13:45",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-04 10:33",
+   "CompletedAt": "2026-11-04 10:33"
   },
   {
    "ID": "TMVALQBJFUIU",
@@ -162,12 +162,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-11-09",
    "Note": "",
    "CreatedAt": "2026-10-16 13:44",
-   "UpdatedAt": "2026-10-16 13:44",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-04 10:28",
+   "CompletedAt": "2026-11-04 10:28"
   },
   {
    "ID": "TMVALR86RGTC",
@@ -666,12 +666,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-29",
    "Note": "",
    "CreatedAt": "2026-10-28 17:03",
-   "UpdatedAt": "2026-10-28 17:03",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-04 10:33",
+   "CompletedAt": "2026-11-04 10:33"
   },
   {
    "ID": "TMVRY6M7KY49",
@@ -722,12 +722,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-03",
    "Note": "",
    "CreatedAt": "2026-11-02 09:11",
-   "UpdatedAt": "2026-11-02 09:11",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-04 10:32",
+   "CompletedAt": "2026-11-04 10:32"
   },
   {
    "ID": "TMVYN1IPMUVV",
@@ -736,12 +736,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-03",
    "Note": "",
    "CreatedAt": "2026-11-02 09:26",
-   "UpdatedAt": "2026-11-02 09:26",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-04 10:32",
+   "CompletedAt": "2026-11-04 10:32"
   },
   {
    "ID": "TMVYN8CL3B7N",
@@ -750,12 +750,82 @@
    "Category": "TV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-03",
    "Note": "",
    "CreatedAt": "2026-11-02 09:32",
-   "UpdatedAt": "2026-11-02 09:32",
+   "UpdatedAt": "2026-11-04 10:32",
+   "CompletedAt": "2026-11-04 10:32"
+  },
+  {
+   "ID": "TMW1K3OMIRK4",
+   "Date": "2026-11-04",
+   "Title": "ย้ายเนื้อที่ email GM",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-06",
+   "Note": "",
+   "CreatedAt": "2026-11-04 10:27",
+   "UpdatedAt": "2026-11-04 10:27",
    "CompletedAt": ""
+  },
+  {
+   "ID": "TMW1K4AI5OXY",
+   "Date": "2026-11-03",
+   "Title": "สรุปงาน mentor",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-09",
+   "Note": "",
+   "CreatedAt": "2026-11-04 10:28",
+   "UpdatedAt": "2026-11-04 10:28",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMW1K55TZKKX",
+   "Date": "2026-11-03",
+   "Title": "support ห้องประชุม มาบตาพุท",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-05",
+   "Note": "",
+   "CreatedAt": "2026-11-04 10:29",
+   "UpdatedAt": "2026-11-04 10:29",
+   "CompletedAt": "2026-11-04 10:29"
+  },
+  {
+   "ID": "TMW1K5OT6EAR",
+   "Date": "2026-11-04",
+   "Title": "แก้ไขงาน sticker staff only",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-04",
+   "Note": "",
+   "CreatedAt": "2026-11-04 10:29",
+   "UpdatedAt": "2026-11-04 10:29",
+   "CompletedAt": "2026-11-04 10:29"
+  },
+  {
+   "ID": "TMW1K91R8118",
+   "Date": "2026-11-04",
+   "Title": "อัพ promotion tv spa",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-05",
+   "Note": "",
+   "CreatedAt": "2026-11-04 10:32",
+   "UpdatedAt": "2026-11-04 10:32",
+   "CompletedAt": "2026-11-04 10:32"
   }
  ]
 }
