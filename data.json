@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10 07:10",
+ "updatedAt": "2026-11-10 08:11",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -302,12 +302,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-10-26",
    "Note": "",
    "CreatedAt": "2026-10-19 11:31",
-   "UpdatedAt": "2026-10-20 08:30",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-10 07:59",
+   "CompletedAt": "2026-11-10 07:59"
   },
   {
    "ID": "TMVERLW4JRBE",
@@ -764,12 +764,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-06",
    "Note": "",
    "CreatedAt": "2026-11-04 10:27",
-   "UpdatedAt": "2026-11-04 10:27",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-10 07:59",
+   "CompletedAt": "2026-11-10 07:59"
   },
   {
    "ID": "TMW1K4AI5OXY",
@@ -778,12 +778,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-09",
    "Note": "",
    "CreatedAt": "2026-11-04 10:28",
-   "UpdatedAt": "2026-11-04 10:28",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-10 07:59",
+   "CompletedAt": "2026-11-10 07:59"
   },
   {
    "ID": "TMW1K55TZKKX",
@@ -854,6 +854,20 @@
    "CreatedAt": "2026-11-09 10:18",
    "UpdatedAt": "2026-11-09 10:18",
    "CompletedAt": "2026-11-09 10:18"
+  },
+  {
+   "ID": "TMW9ZFGF01S9",
+   "Date": "2026-11-10",
+   "Title": "Train the Trainer\" workshop,",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-11-16",
+   "Note": "Train the Trainer\" workshop,  scheduled for 17 - 19 November 2026 at the Explorer Meeting Room",
+   "CreatedAt": "2026-11-10 07:59",
+   "UpdatedAt": "2026-11-10 07:59",
+   "CompletedAt": ""
   }
  ]
 }
