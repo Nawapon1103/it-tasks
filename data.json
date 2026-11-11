@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11 16:09",
+ "updatedAt": "2026-11-11 17:10",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -909,6 +909,104 @@
    "Note": "แก้ no of tv  ให้ไม่มีอักขระ",
    "CreatedAt": "2026-11-10 09:35",
    "UpdatedAt": "2026-11-10 09:35",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWBXFV7KR6S",
+   "Date": "2026-11-11",
+   "Title": "ซ่อมจอ LED ห้องประชุม power เสีย",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-11",
+   "Note": "",
+   "CreatedAt": "2026-11-11 16:39",
+   "UpdatedAt": "2026-11-11 16:39",
+   "CompletedAt": "2026-11-11 16:39"
+  },
+  {
+   "ID": "TMWBXMPLV4BS",
+   "Date": "2026-11-11",
+   "Title": "ติดตั้ง encoder led mediteranean",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-11",
+   "Note": "",
+   "CreatedAt": "2026-11-11 16:44",
+   "UpdatedAt": "2026-11-11 16:44",
+   "CompletedAt": "2026-11-11 16:44"
+  },
+  {
+   "ID": "TMWBXMQORBW6",
+   "Date": "2026-11-11",
+   "Title": "ติดตั้ง encoder led mediteranean",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-11",
+   "Note": "",
+   "CreatedAt": "2026-11-11 16:44",
+   "UpdatedAt": "2026-11-11 16:44",
+   "CompletedAt": "2026-11-11 16:44"
+  },
+  {
+   "ID": "TMWBXN8GZ1X1",
+   "Date": "2026-11-11",
+   "Title": "ลงวินโดว์คอมไอทีไหม่ เสีย",
+   "Category": "COMPUTER",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-11",
+   "Note": "",
+   "CreatedAt": "2026-11-11 16:44",
+   "UpdatedAt": "2026-11-11 16:44",
+   "CompletedAt": "2026-11-11 16:44"
+  },
+  {
+   "ID": "TMWBXNGFQFT4",
+   "Date": "2026-11-11",
+   "Title": "รับของจาก wattana",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "",
+   "Note": "",
+   "CreatedAt": "2026-11-11 16:44",
+   "UpdatedAt": "2026-11-11 16:44",
+   "CompletedAt": "2026-11-11 16:44"
+  },
+  {
+   "ID": "TMWBY8TWVY5Z",
+   "Date": "2026-11-11",
+   "Title": "ขอใบเสนอราคา phone K navin",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-11-11",
+   "Note": "",
+   "CreatedAt": "2026-11-11 17:01",
+   "UpdatedAt": "2026-11-11 17:01",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWBY98QXPGH",
+   "Date": "2026-11-11",
+   "Title": "revised Capex",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-11-12",
+   "Note": "",
+   "CreatedAt": "2026-11-11 17:01",
+   "UpdatedAt": "2026-11-11 17:01",
    "CompletedAt": ""
   }
  ]
