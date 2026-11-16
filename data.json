@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16 14:11",
+ "updatedAt": "2026-11-16 17:09",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -1008,6 +1008,76 @@
    "CreatedAt": "2026-11-11 17:01",
    "UpdatedAt": "2026-11-11 17:01",
    "CompletedAt": ""
+  },
+  {
+   "ID": "TMWIYLDAYEP2",
+   "Date": "2026-11-16",
+   "Title": "แก้งานnetwork topaz ติดๆดับๆ เพราะไฟตก",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-17",
+   "Note": "",
+   "CreatedAt": "2026-11-16 14:45",
+   "UpdatedAt": "2026-11-16 14:45",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWIYLED9XSB",
+   "Date": "2026-11-16",
+   "Title": "แก้งานnetwork topaz ติดๆดับๆ เพราะไฟตก",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Cancelled",
+   "Deadline": "2026-11-17",
+   "Note": "",
+   "CreatedAt": "2026-11-16 14:45",
+   "UpdatedAt": "2026-11-16 14:50",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWIYMBL6YZW",
+   "Date": "2026-11-16",
+   "Title": "สร้างDashboardโปรแกรม IT",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-16",
+   "Note": "",
+   "CreatedAt": "2026-11-16 14:46",
+   "UpdatedAt": "2026-11-16 14:46",
+   "CompletedAt": "2026-11-16 14:46"
+  },
+  {
+   "ID": "TMWIYMCYG2D5",
+   "Date": "2026-11-16",
+   "Title": "สร้างDashboardโปรแกรม IT",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Cancelled",
+   "Deadline": "2026-11-16",
+   "Note": "",
+   "CreatedAt": "2026-11-16 14:46",
+   "UpdatedAt": "2026-11-16 14:50",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWIYQPJ07HM",
+   "Date": "2026-11-16",
+   "Title": "ทำห้องประชุม explorer",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-16",
+   "Note": "",
+   "CreatedAt": "2026-11-16 14:49",
+   "UpdatedAt": "2026-11-16 14:49",
+   "CompletedAt": "2026-11-16 14:49"
   }
  ]
 }
