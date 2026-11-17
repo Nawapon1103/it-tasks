@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17 14:09",
+ "updatedAt": "2026-11-17 15:10",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -862,12 +862,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-11-16",
    "Note": "Train the Trainer\" workshop,  scheduled for 17 - 19 November 2026 at the Explorer Meeting Room",
    "CreatedAt": "2026-11-10 07:59",
-   "UpdatedAt": "2026-11-10 08:23",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-17 14:16",
+   "CompletedAt": "2026-11-17 14:16"
   },
   {
    "ID": "TMWA0AIM5D8M",
@@ -876,12 +876,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-11-11",
    "Note": "",
    "CreatedAt": "2026-11-10 08:23",
-   "UpdatedAt": "2026-11-10 08:23",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-17 14:17",
+   "CompletedAt": "2026-11-17 14:17"
   },
   {
    "ID": "TMWA2UZHL6JF",
@@ -1002,12 +1002,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-11-12",
    "Note": "",
    "CreatedAt": "2026-11-11 17:01",
-   "UpdatedAt": "2026-11-11 17:01",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-17 14:17",
+   "CompletedAt": "2026-11-17 14:17"
   },
   {
    "ID": "TMWIYLDAYEP2",
@@ -1078,6 +1078,48 @@
    "CreatedAt": "2026-11-16 14:49",
    "UpdatedAt": "2026-11-16 14:49",
    "CompletedAt": "2026-11-16 14:49"
+  },
+  {
+   "ID": "TMWKCW6WWOWV",
+   "Date": "2026-11-17",
+   "Title": "งานแก้ไข dashboard IT",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-18",
+   "Note": "",
+   "CreatedAt": "2026-11-17 14:13",
+   "UpdatedAt": "2026-11-17 14:13",
+   "CompletedAt": "2026-11-17 14:13"
+  },
+  {
+   "ID": "TMWKCWH9P5T8",
+   "Date": "2026-11-17",
+   "Title": "valeo setup",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-17",
+   "Note": "",
+   "CreatedAt": "2026-11-17 14:13",
+   "UpdatedAt": "2026-11-17 14:13",
+   "CompletedAt": "2026-11-17 14:13"
+  },
+  {
+   "ID": "TMWKCWQHMRHK",
+   "Date": "2026-11-17",
+   "Title": "เกมสงกราณ์",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-17",
+   "Note": "",
+   "CreatedAt": "2026-11-17 14:14",
+   "UpdatedAt": "2026-11-17 14:14",
+   "CompletedAt": ""
   }
  ]
 }
