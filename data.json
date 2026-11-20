@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20 11:09",
+ "updatedAt": "2026-11-20 12:09",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -50,12 +50,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-10-29",
    "Note": "รอ memo ออก",
    "CreatedAt": "2026-10-16 13:32",
-   "UpdatedAt": "2026-10-16 13:42",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMVALDGR4H4L",
@@ -106,12 +106,12 @@
    "Category": "Follow-up",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-10-28",
    "Note": "",
    "CreatedAt": "2026-10-16 13:43",
-   "UpdatedAt": "2026-10-16 13:45",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMVALPWQHCAP",
@@ -890,12 +890,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-11",
    "Note": "แก้ no of tv  ให้ไม่มีอักขระ",
    "CreatedAt": "2026-11-10 09:35",
-   "UpdatedAt": "2026-11-10 09:35",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWA2V0VEDAX",
@@ -1114,12 +1114,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-17",
    "Note": "",
    "CreatedAt": "2026-11-17 14:14",
-   "UpdatedAt": "2026-11-17 14:14",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWLM8HM6QY3",
@@ -1156,12 +1156,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-11-18",
    "Note": "",
    "CreatedAt": "2026-11-18 14:19",
-   "UpdatedAt": "2026-11-18 14:19",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWLSK7RQT9L",
@@ -1184,12 +1184,12 @@
    "Category": "IT",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-20",
    "Note": "",
    "CreatedAt": "2026-11-19 07:54",
-   "UpdatedAt": "2026-11-19 07:54",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWMUBF9BAJM",
@@ -1198,12 +1198,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-20",
    "Note": "",
    "CreatedAt": "2026-11-19 07:57",
-   "UpdatedAt": "2026-11-19 07:57",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWMUBOAGTLM",
@@ -1212,12 +1212,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-20",
    "Note": "",
    "CreatedAt": "2026-11-19 07:57",
-   "UpdatedAt": "2026-11-19 07:57",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWMUCL9RFX2",
@@ -1226,12 +1226,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-20",
    "Note": "",
    "CreatedAt": "2026-11-19 07:57",
-   "UpdatedAt": "2026-11-19 08:00",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWMUCWDY4C8",
@@ -1240,12 +1240,12 @@
    "Category": "อื่นๆ",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-20",
    "Note": "",
    "CreatedAt": "2026-11-19 07:58",
-   "UpdatedAt": "2026-11-19 07:58",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-20 11:39",
+   "CompletedAt": "2026-11-20 11:39"
   },
   {
    "ID": "TMWMUDX1X5YQ",
