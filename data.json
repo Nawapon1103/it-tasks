@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20 08:09",
+ "updatedAt": "2026-11-20 09:09",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -1372,6 +1372,48 @@
    "CreatedAt": "2026-11-19 08:37",
    "UpdatedAt": "2026-11-19 08:37",
    "CompletedAt": "2026-11-19 08:37"
+  },
+  {
+   "ID": "TMWOBF3KDA2C",
+   "Date": "2026-11-19",
+   "Title": "เขียนโปรแกรมคลอบกล้องวงจรปิด",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Cancelled",
+   "Deadline": "",
+   "Note": "",
+   "CreatedAt": "2026-11-20 08:43",
+   "UpdatedAt": "2026-11-20 08:44",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWOBF5FOYEH",
+   "Date": "2026-11-19",
+   "Title": "เขียนโปรแกรมคลอบกล้องวงจรปิด",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Cancelled",
+   "Deadline": "",
+   "Note": "",
+   "CreatedAt": "2026-11-20 08:43",
+   "UpdatedAt": "2026-11-20 08:44",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWOBG3Q1Y29",
+   "Date": "2026-11-20",
+   "Title": "เขียนโปรแกรมครอบกล้องวงจรปิด",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-20",
+   "Note": "",
+   "CreatedAt": "2026-11-20 08:44",
+   "UpdatedAt": "2026-11-20 08:44",
+   "CompletedAt": ""
   }
  ]
 }
