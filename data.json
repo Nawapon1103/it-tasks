@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24 13:09",
+ "updatedAt": "2026-11-24 14:09",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -1413,6 +1413,48 @@
    "Note": "",
    "CreatedAt": "2026-11-20 08:44",
    "UpdatedAt": "2026-11-20 08:44",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWUCNDFMRMV",
+   "Date": "2026-11-24",
+   "Title": "แก้ backup nas",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-24",
+   "Note": "",
+   "CreatedAt": "2026-11-24 14:04",
+   "UpdatedAt": "2026-11-24 14:04",
+   "CompletedAt": "2026-11-24 14:04"
+  },
+  {
+   "ID": "TMWUCNQRV8G3",
+   "Date": "2026-11-24",
+   "Title": "อัพ firmware nas อุดช่องโหว่",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-24",
+   "Note": "",
+   "CreatedAt": "2026-11-24 14:04",
+   "UpdatedAt": "2026-11-24 14:04",
+   "CompletedAt": "2026-11-24 14:04"
+  },
+  {
+   "ID": "TMWUCO943R35",
+   "Date": "2026-11-24",
+   "Title": "แก้ไขการทำงานของ backup เปลี่ยน solution backup ใหม่ทั้งหมด",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Pending",
+   "Deadline": "2026-11-24",
+   "Note": "",
+   "CreatedAt": "2026-11-24 14:05",
+   "UpdatedAt": "2026-11-24 14:05",
    "CompletedAt": ""
   }
  ]
