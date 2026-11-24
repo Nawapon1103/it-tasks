@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24 14:09",
+ "updatedAt": "2026-11-24 15:09",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -1456,6 +1456,34 @@
    "CreatedAt": "2026-11-24 14:05",
    "UpdatedAt": "2026-11-24 14:05",
    "CompletedAt": ""
+  },
+  {
+   "ID": "TMWUCVNDOVIA",
+   "Date": "2026-11-24",
+   "Title": "setup tv ให้ fc kc training",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-22",
+   "Note": "",
+   "CreatedAt": "2026-11-24 14:11",
+   "UpdatedAt": "2026-11-24 14:11",
+   "CompletedAt": "2026-11-24 14:11"
+  },
+  {
+   "ID": "TMWUD05AOZTU",
+   "Date": "2026-11-24",
+   "Title": "ย้ายเครื่องบันทึก 1 เครื่อง nvr ไปติดที่ Server",
+   "Category": "CCTV",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-23",
+   "Note": "",
+   "CreatedAt": "2026-11-24 14:14",
+   "UpdatedAt": "2026-11-24 14:14",
+   "CompletedAt": "2026-11-24 14:14"
   }
  ]
 }
