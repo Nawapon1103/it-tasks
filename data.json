@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24 17:09",
+ "updatedAt": "2026-11-27 07:08",
  "tasks": [
   {
    "ID": "TMVAL8ATA4T7",
@@ -1170,12 +1170,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-20",
    "Note": "",
    "CreatedAt": "2026-11-18 14:20",
-   "UpdatedAt": "2026-11-18 14:20",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-26 15:03",
+   "CompletedAt": "2026-11-26 15:03"
   },
   {
    "ID": "TMWMU8ILDE18",
@@ -1408,12 +1408,12 @@
    "Category": "CCTV",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "On Process",
+   "Status": "Done",
    "Deadline": "2026-11-20",
    "Note": "",
    "CreatedAt": "2026-11-20 08:44",
-   "UpdatedAt": "2026-11-20 08:44",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-26 15:03",
+   "CompletedAt": "2026-11-26 15:03"
   },
   {
    "ID": "TMWUCNDFMRMV",
@@ -1450,12 +1450,12 @@
    "Category": "NETWORK",
    "Owner": "IT",
    "Priority": "Normal",
-   "Status": "Pending",
+   "Status": "Done",
    "Deadline": "2026-11-24",
    "Note": "",
    "CreatedAt": "2026-11-24 14:05",
-   "UpdatedAt": "2026-11-24 14:05",
-   "CompletedAt": ""
+   "UpdatedAt": "2026-11-26 15:03",
+   "CompletedAt": "2026-11-26 15:03"
   },
   {
    "ID": "TMWUCVNDOVIA",
@@ -1498,6 +1498,104 @@
    "CreatedAt": "2026-11-24 16:54",
    "UpdatedAt": "2026-11-24 16:54",
    "CompletedAt": "2026-11-24 16:54"
+  },
+  {
+   "ID": "TMWUL9WOOTG2",
+   "Date": "2026-11-24",
+   "Title": "add wifi sprc",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-24",
+   "Note": "",
+   "CreatedAt": "2026-11-24 18:06",
+   "UpdatedAt": "2026-11-24 18:06",
+   "CompletedAt": "2026-11-24 18:06"
+  },
+  {
+   "ID": "TMWULADDGXL1",
+   "Date": "2026-11-24",
+   "Title": "Discuss comanche friday",
+   "Category": "NETWORK",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "On Process",
+   "Deadline": "2026-11-27",
+   "Note": "",
+   "CreatedAt": "2026-11-24 18:06",
+   "UpdatedAt": "2026-11-24 18:06",
+   "CompletedAt": ""
+  },
+  {
+   "ID": "TMWVFSJPQROI",
+   "Date": "2026-11-25",
+   "Title": "แก้เพลงไม่ดัง lobby",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-25",
+   "Note": "",
+   "CreatedAt": "2026-11-25 08:20",
+   "UpdatedAt": "2026-11-25 08:20",
+   "CompletedAt": "2026-11-25 08:20"
+  },
+  {
+   "ID": "TMWX9LVZ6DKQ",
+   "Date": "2026-11-26",
+   "Title": "เปลี่ยน power จอ led medi",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-25",
+   "Note": "",
+   "CreatedAt": "2026-11-26 15:02",
+   "UpdatedAt": "2026-11-26 15:02",
+   "CompletedAt": "2026-11-26 15:02"
+  },
+  {
+   "ID": "TMWX9MIWLR6I",
+   "Date": "2026-11-26",
+   "Title": "ทำแผนกประกอบดับไฟวันที่1",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-25",
+   "Note": "",
+   "CreatedAt": "2026-11-26 15:03",
+   "UpdatedAt": "2026-11-26 15:03",
+   "CompletedAt": "2026-11-26 15:03"
+  },
+  {
+   "ID": "TMWX9NN3SN0O",
+   "Date": "2026-11-26",
+   "Title": "setup legacy",
+   "Category": "อื่นๆ",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "",
+   "Note": "",
+   "CreatedAt": "2026-11-26 15:04",
+   "UpdatedAt": "2026-11-26 15:04",
+   "CompletedAt": "2026-11-26 15:04"
+  },
+  {
+   "ID": "TMWX9Q12RMJJ",
+   "Date": "2026-11-26",
+   "Title": "setup legacy",
+   "Category": "IT",
+   "Owner": "IT",
+   "Priority": "Normal",
+   "Status": "Done",
+   "Deadline": "2026-11-26",
+   "Note": "",
+   "CreatedAt": "2026-11-26 15:05",
+   "UpdatedAt": "2026-11-26 15:05",
+   "CompletedAt": "2026-11-26 15:05"
   }
  ]
 }
